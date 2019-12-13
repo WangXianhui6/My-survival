@@ -1,0 +1,472 @@
+.fly-carousel-outer{
+	font-size: 0;
+	position: relative;
+	margin-bottom: .2rem;
+}
+.fly-carousel-outer>.carousel-inner{
+	position: relative;
+}
+.fly-carousel-outer>.carousel-inner>div{
+	text-align: center;
+	float: left;
+	height: 100%;
+}
+.fly-carousel-outer>.carousel-inner>div>img{
+	width: 100%;
+	height: 100%;
+}{
+	
+}
+.fly-carousel-outer>.radius{
+	position: absolute;
+	bottom: 1.5rem;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.fly-character{
+	position: relative;
+	top: -1.2rem;
+	box-shadow: 0px -7px 7px 0px #e2e2e2;
+	background: white;
+}
+.fly-character>div{
+	text-align: left;
+	padding: .22rem 0;
+	width: 33.3333%;
+	position: relative;
+}
+.fly-character>div:after{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: .03rem;
+	background: #383838;
+	z-index: 1;
+}
+.fly-character>div:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: .01rem;
+	background: #ccc;
+	z-index: 1;
+}
+.fly-character>div:last-child:before{
+	background: transparent;
+}
+.fly-character>div .img{
+	transition: all ease-out 0.5s;
+	top: .13rem;
+	left: 30%;
+	position: absolute;
+	text-align: center;
+	line-height: .9rem;
+	width: .78rem;
+	height: .78rem;
+	border-radius: 50%;
+	z-index: 0;
+}
+.fly-character>div .img{
+	width: .79rem;
+	height: .79rem;
+}
+.fly-character>div .img>img{
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.fly-character>div .changebig{
+	text-align: center;
+	opacity: 0;
+	z-index: -1;
+}
+.fly-character>div:hover .changebig{
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 1;
+}
+.fly-character>div .intro{
+	transition: all ease-out 0.5s;
+	position: relative;
+	z-index: 1;
+	margin-left: 50%;
+	padding-left: .2rem;
+	padding-top: .1rem;
+	padding-bottom: .1rem;
+}
+.fly-character>div:hover .intro{
+	margin-left: 5%;
+	color: white;
+}
+.fly-character>div .changebig{
+	position: absolute;
+}
+
+.fly-shop-carosol-outer{
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	position: relative;
+	padding: .2rem 0 1.5rem 0;
+}
+.fly-shop-carosol-outer>.shop-carosol-inner{
+	white-space: nowrap;
+	transition: left 0.3s ease-out;
+	position: relative;
+}
+.fly-shop-carosol-outer>.shop-carosol-inner>div{
+	display: inline-block;
+	padding: 0 .3rem 40px .1rem;
+}
+.fly-shop-carosol-outer>.shop-carosol-inner>div img{
+	height: 80%;
+}
+.fly-shop-carosol-outer>.shop-carosol-inner>div>div{
+	background: #f6f5f5;
+	transition: all 0.5s ease-out;
+	padding: 0 .16rem .4rem .16rem;
+}
+.fly-shop-carosol-outer>.shop-carosol-inner>div>div:hover{
+	transform: scale(1.02);
+	box-shadow: 0 3px 21px -7px #000;
+}
+.shop-carosol-inner>div>div .img{
+	padding-top: .2rem;
+	height: 3.6rem;
+	text-align: center;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .2rem;
+}
+.shop-carosol-inner>div>div .img:after{
+	content: '';
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 0;
+	background: #ef8200;
+	transition: width 0.5s ease-out;
+	bottom: 0;
+}
+.shop-carosol-inner>div>div:hover .img:after{
+	width: 100%;
+}
+.shop-carosol-inner .intro>.name{
+	position: relative;
+	padding-bottom: .1rem;
+}
+.shop-carosol-inner .intro>.cname{
+	white-space: normal;
+}
+.shop-carosol-inner .intro>.name:after{
+	position: absolute;
+	right: 0;
+	content: '';
+	display: block;
+	width: 22px;
+	height: 9px;
+	background: url(../img/shop-arrow.png) no-repeat;
+}
+
+.show-more{
+	border-radius: .03rem;
+	padding: .1rem .4rem;
+	border: 1px solid #ef8200;
+	background: #ef8200;
+	position: absolute !important;
+	bottom: .5rem;
+	left: 50%;
+	font-size: .12rem;
+	transform: translate(-50%,0);
+}
+.show-more:hover{
+	color: #ef8200 !important;
+}
+.fly-gameny-techology{
+	margin-top: 80px;
+	position: relative;
+	padding-bottom: 100px;
+}
+.all-title{
+	text-align: center;
+	padding-left: 10px;
+	font-size: 36px;
+}
+.all-title>span{
+	vertical-align: middle;
+}
+.all-title>span.title-logo{
+	display: inline-block;
+	width: 34px;
+	height: 24px;
+	background: url(../img/title-logo.png) no-repeat;
+}
+.fly-gameny-techology>.fly-gameny-techology-intro{
+	text-align: center;
+	font-size: 14px;
+	line-height: 30px;
+	width: 10.2rem;
+	margin: .5rem auto .75rem;
+}
+.fly-gameny-techology>.fly-gameny-techology-img>img{
+	width: 100%;
+}
+.fly-science-life{
+	position: relative;
+	margin-top: 50px;
+	border-top: 1px solid #ccc;
+	height: 522px;
+}
+.fly-science-life>div{
+	float: right;
+}
+.fly-science-life>.intro-left{
+	margin-top: 50px;
+	width: 50%;
+	text-align: center;
+	position: relative;
+}
+.fly-science-life>.intro-left>.life-radius{
+	left: 15%;
+	bottom: -.2rem;
+	position: absolute;
+}
+.fly-science-life>.intro-left>.life-radius>span{
+	cursor: pointer;
+	padding: 0 7px;
+	border-right: 1px solid #f2f2f2;
+}
+.fly-science-life>.intro-left>.life-radius>span.on{
+	color: #ef8200;
+	font-size: 16px;
+}
+.fly-science-life>.intro-left .caro-content{
+	position: relative;
+	line-height: 24px;
+}
+.fly-science-life>.intro-left .life-bottom>.life-btn{
+	position: absolute;
+	right: 5%;
+	bottom: -.8rem;
+}
+.fly-science-life>.intro-left>.intro-outer{
+	width: 70%;
+	margin: 0 auto;
+}
+.fly-science-life .intro-outer .caro-content>.all-title{
+	margin-bottom: .5rem;
+}
+.fly-science-life .caro-content>.history-intro>div{
+	color: #666;
+	text-align: left;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.fly-science-life>.intro-right{
+	font-size: 0;
+	width: 50%;
+	height: 100%;
+}
+.fly-science-life>.intro-right img{
+	width: 100%;
+}
+.fly-video{
+	font-size: 0;
+	position: relative;
+	text-align: center;
+	color: #f2f2f2;
+}
+.fly-video>.fly-video-btn{
+	font-size: 22px;
+	position: absolute;
+	transform: translate(-50%, -30%);
+	transition: all 0.5s ease-out;
+}
+.fly-video>.fly-video-btn>.fly-video-intro{
+	transition: all 0.5s ease-out;
+	opacity: 0;
+	padding-top: 32px;
+	position: relative;
+	
+}
+.fly-video:hover>.fly-video-btn{
+	transform: translate(-50%, -50%);
+}
+.fly-video:hover>.fly-video-btn>.fly-video-intro{
+	opacity: 1;
+	/*padding-top: 32px;*/
+}
+.fly-video>.fly-video-img img,.fly-video>.fly-video-img fly-video>source{
+	width: 100%;
+	height: 5.7rem;
+	transition: all 3.5s ease-out;
+}
+.fly-video:hover>.fly-video-img img{
+	transform: scale(1.05);
+}
+.fly-video>.fly-video-img>.fly-video-img-bg{
+	display: none;
+}
+.fly-video>.fly-video-img>.fly-video-img-bg.show{
+	display: block;
+}
+.fly-shop-carosol-outer>.radius{
+	position: absolute;
+	transform: translate(-50%,0);
+}
+
+@media (max-width: 1130px) {
+	.fly-science-life>.intro-left{
+		padding-top: 90px;
+	}
+	.fly-science-life>.intro-left .life-bottom{
+		padding-top: 1.2rem;
+	}
+	.fly-science-life>.intro-left .life-bottom>.life-btn{
+		right: 50%;
+		transform: translate(50%,0);
+		bottom: 0;
+	}
+	.fly-science-life>.intro-left,.fly-science-life>.intro-right{
+		width: 100%;
+	}
+	.fly-science-life{
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.fly-science-life>.intro-left>.life-radius{
+		left: 50%;
+		transform: translate(-50%,0);
+		bottom: 90%;
+		/*width: 100%;*/
+		color: black;
+	}
+	.fly-science-life>.intro-left>.life-radius>span{
+		/*display: block;*/
+		font-size: 14px;
+		border: 0;
+	}
+	.fly-science-life>.intro-left>.intro-outer{
+		width: 90%;
+	}
+}
+@media (max-width: 990px) {
+	
+	.fly-gameny-techology>.fly-gameny-techology-intro{
+		/*width: 5.1rem;*/
+		text-align: left;
+	}
+	.survival-bottom .friendly .friendly-vx:hover>.aqrcode{
+		bottom: 20px;
+	}
+	.friendly .friendly-vx>.aqrcode img{
+		width: 50px;
+		height: 50px;
+	}
+	.fly-gameny-techology>.fly-gameny-techology-title{
+		font-size: 18px;
+	}
+	.fly-character{
+		top: -1rem;
+	}
+	.fly-carousel-outer>.radius{
+		bottom: 1.2rem;
+	}
+	.fly-character>div .img{
+		/*width: 1.8rem;
+		height: 1.8rem;*/
+		left: 50%;
+		transform: translate(-50%,0);
+	}
+	.fly-character>div .img.changebig{
+		transform: none;
+	}
+	.fly-character>div .intro{
+		text-align: center;
+		margin-left: 0;
+		padding-left: 0;
+		padding-top: .8rem;
+	}
+	.fly-carousel-outer>.carousel-inner>div>img{
+		height: auto;
+		/*width: 100%;*/
+	}
+	/*.fly-shop-carosol-outer>.shop-carosol-inner>div{
+		padding: 0 .1rem;
+	}*/
+	.shop-carosol-inner>div>div .img{
+		height: 4.6rem;
+	}
+	.shop-carosol-inner>div>div .intro{
+		font-size: .2rem;
+	}
+	.show-more{
+		padding: .2rem 1rem;
+		font-size: .2rem;
+	}
+	.fly-character>div .changebig>img{
+		transform: translate(-20%,0);
+		height: 100%;
+		width: auto;
+		position: relative;
+    	/*left: -90%;*/
+	}
+	
+	.all-title{
+		font-size: 18px;
+	}
+	
+}
+@media (max-width: 768px){
+	.fly-science-life>.intro-left{
+		margin-top: 0;
+	}
+	.fly-science-life>.intro-left>.life-radius{
+		left: 50%;
+		transform: translate(-50%,0);
+		/*bottom: 0;*/
+		width: 100%;
+		color: black;
+	}
+	.shop-carosol-inner>div>div .img{
+		width: 100%;
+		height: 7rem;
+	}
+	.fly-shop-carosol-outer>.shop-carosol-inner>div img{
+		width: 80%;
+	}
+	.fly-carousel-outer>.radius>span,.fly-shop-carosol-outer>.radius>span{
+		width: .8rem;
+		height: .8rem;
+	}
+	.fly-shop-carosol-outer>.radius{
+		bottom: 1.6rem;
+	}
+	.fly-character>div .img{
+		width: 1.8rem;
+		height: 1.8rem;
+		left: 50%;
+		transform: translate(-50%,0);
+	}
+	.fly-character>div .intro{
+		text-align: center;
+		margin-left: 0;
+		padding-left: 0;
+		padding-top: 2rem;
+	}
+	.fly-character>div .changebig>img{
+		transform: translate(-50%,0);
+		position: relative;
+	}
+}

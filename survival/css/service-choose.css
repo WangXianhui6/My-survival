@@ -1,0 +1,463 @@
+/*产品选型*/
+
+.fly-choose-banner {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+}
+
+.fly-bg{
+	background: url(../img/choose-bg.jpg) no-repeat center/cover;
+}
+.fly-full{
+	width: 100%;
+	height: 100%;
+}
+.font-set {
+    font-family: syzt;
+}
+
+.fly-inside-banner .fly-desc{
+	user-select: none;
+}
+.fly-choose-banner {
+	height: 5rem;
+}
+
+.fly-middle-center{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    color: white;
+}
+
+.fly-choose-banner .fly-desc .fly-h2{
+    font-size: .72rem;
+    letter-spacing: .02rem;
+}
+.fly-choose-banner .fly-desc .fly-p{
+	font-size: .24rem;
+}
+.fly-main-box .fly-select-box{
+	padding: 0 2%;
+}
+.fly-scene{
+	font-size: 0;
+}
+.fly-scene1{
+	margin-top: .45rem;
+}
+.scroll-watch-in-view.fly-show-left,.scroll-watch-in-view.fly-show-bottom {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+.fly-scene h3 {
+    font-size: .16rem;
+    color: #333;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: .45rem;
+    font-weight: normal;
+}
+.fly-show-left{
+	-webkit-transition: opacity cubic-bezier(.4,0,.2,1) 1s,
+	transform cubic-bezier(.4,0,.2,1) 1s,box-shadow .6s;
+}
+
+.fly-scene-list:first-child {
+    margin-bottom: 1rem;
+    transition-delay: .1s;
+}
+.fly-scene-list:last-child {
+    margin-bottom: .3rem;
+    transition-delay: .1s;
+}
+/*.fly-scene-list:nth-child(2n) {
+    margin-right: 0;
+}*/
+.fly-scene-list {
+    display: inline-block;
+    width: 50%;
+    cursor: pointer;
+}
+.fly-scene-list span {
+    font-family: 'Helvetica Neue LT Pro';
+    color: #ef8200;
+    font-size: .22rem;
+    margin-right: .2rem;
+}
+.fly-ib-top {
+    display: inline-block;
+    vertical-align: top;
+}
+.fly-scene-list .fly-warper {
+    width: 4.68rem;
+    position: relative;
+}
+.fly-scene-list .fly-pro{
+	width: 100%;
+}
+.scene-list:nth-child(2n) {
+    margin-right: 0;
+}
+.scene-list:nth-child(2) {
+    transition-delay: .2s;
+}
+.responsive {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+.fly-pro:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+.fly-pro img,.fly-product-pro img{
+	-webkit-transition: transform cubic-bezier(.215,.61,.355,1) 2s;
+}
+.fly-scene-list.this .fly-desc, 
+.fly-scene-list:hover .fly-desc {
+    background: #ef8200;
+    color: #fff;
+}
+.fly-scene-list .fly-desc {
+    width: 100%;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .16rem;
+    color: #666;
+    font-weight: normal;
+    background: #f4f4f4;
+}
+.transition {
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+/*线条效果*/
+.fly-scene-list.this .scene-line-tb:after, 
+.fly-scene-list.this .scene-line-tb:before,
+.fly-scene-list:hover .scene-line-tb:after, 
+.fly-scene-list:hover .scene-line-tb:before {
+    width: 100%;
+}
+.fly-scene-list .scene-line-tb:after,
+.fly-scene-list .scene-line-tb:before {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 4px;
+    background: #ef8200;
+    transition: .8s 50ms;
+    -webkit-transition: .8s 50ms;
+}
+.fly-scene-list .scene-line-tb:after {
+    right: auto;
+    left: 0;
+    top: auto;
+    bottom: 0;
+}
+
+
+.fly-scene-list.this .scene-line-lr:before, .fly-scene-list:hover .scene-line-lr:before {
+   height: 100%; 
+   top: auto;
+   bottom: 0;
+    
+}
+.fly-scene-list .scene-line-lr:before {
+    top: auto;
+    bottom: 0;
+}
+
+.fly-scene-list .scene-line-lr:before {
+    content: ' ';
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    width: 4px;
+    height: 0;
+    background: #ef8200;
+    transition: .8s 50ms;
+    -webkit-transition: .8s 50ms;
+}
+.fly-scene-list .scene-line-lr:after {
+    content: ' ';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    width: 4px;
+    height: 0;
+    background: #ef8200;
+    transition: .8s 50ms;
+    -webkit-transition: .8s 50ms;
+}
+.fly-scene-list.this .scene-line-lr:after, .fly-scene-list:hover .scene-line-lr:after {
+    height: 100%;
+    left: auto;
+    right: 0;
+}
+.fly-scene-list .scene-line-lr:after {
+    left: auto;
+    right: 0;
+}
+/*线条效果*/
+
+/*类型选择*/
+.fly-option{
+	padding-left: 120px;
+}
+.fly-option-list {
+	display: inline-block;
+    margin-right: 80px;
+    cursor: pointer;
+}
+.fly-option-list span{
+	display: inline-block;
+	font-size: .22rem;
+    font-family: 'Helvetica Neue LT Pro';
+    margin-right: .2rem;
+    color: #ef8200;
+}
+.transition-short {
+    transition: .4s;
+    -webkit-transition: .4s;
+}
+/*按钮*/
+.fly-select-btn{
+	display: inline-block;
+	padding: 0 .3rem;
+	color: #333;
+	font-family: 'Helvetica Neue LT Pro';
+	font-size: .16rem;
+	min-width: 120px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background: #d8d8d8;
+	border-radius:3px;
+}
+.fly-select-btn:hover,.fly-select-btn.this{
+	color: #fff;
+    background: #ef8200;
+}
+
+/*购买产品*/
+.fly-swiper-container,.carousel-box{
+	margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+}
+.fly-swiper-wrapper{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+.fly-swiper-slide, .fly-swiper-wrapper {
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    transition: left 0.8s;
+}
+.fly-swiper-list{
+	position: relative;
+	width: 33.33%;
+	padding: 0 .2rem;
+	/*border-left: .2rem solid transparent;*/
+    /*border-right: .2rem solid transparent;*/
+    margin-bottom: .8rem;
+    border-bottom: 1 px solid #E2E2E2;
+    opacity: 1;
+}
+.fly-swiper-slide{
+	flex-shrink: 0;
+    height: 100%;
+    position: relative;
+}
+.fly-swiper-list .fly-product-pro{
+	position: relative;
+	height: 4.2rem;
+    line-height:4.2rem;
+    text-align: center;
+    background: #f6f6f6;
+    border-radius: 3px;
+}
+
+.fly-swiper-list .fly-product-pro img {
+    max-height: 2.47rem;
+    max-width:1.85rem;
+    transition: all 2s ease-out;
+}
+.fly-swiper-list:hover .fly-product-pro img{
+	transform: scale(1.1);
+}
+.fly-swiper-list .intro {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    background: rgba(255,255,255,.8);
+    border: 4px solid #e9e9e9;
+    opacity: 0;
+}
+.fly-swiper-list:hover .intro {
+    opacity: 1;
+}
+.fly-swiper-list .intro h4{
+	font-size: .2rem;
+    color: #666;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: .74rem;
+    overflow: hidden;
+    transition: ease .6s;
+    -webkit-transition: ease .6s;
+    -webkit-transform: translateY(20px);
+}
+.fly-swiper-list .intro p{
+	font-size: .14rem;
+    line-height: .28rem;
+    color: #5d5d5d;
+    width: 84%;
+    margin: 0 auto .3rem;
+    text-align: center;
+    transition: ease .6s 50ms;
+    -webkit-transition: ease .6s 50ms;
+    -webkit-transform: translateY(20px);
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/*底部内容*/
+.fly-swiper-list .product-bottom{
+	position: relative;
+    padding: .3rem 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.fly-swiper-list .product-bottom .product-title{
+	font-size: .18rem;
+    color: #333;
+}
+.fly-swiper-list .product-bottom .product-text{
+	font-size: .14rem;
+    color: #999;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.fly-swiper-list .product-bottom .product-sale{
+	position: absolute;
+    display: inline-block;
+    padding: .1rem .2rem;
+    font-size: .14rem;
+    color: #666;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    right: 0;
+    top: .33rem;
+}
+
+.fly-swiper-list:hover .product-title,.fly-swiper-list:hover .product-sale{
+	color: #EF8200;
+}
+.fly-swiper-list:hover .product-bottom .product-sale {
+    border-color: #ef8200;
+}
+.fly-swiper-list:hover .product-bottom:after {
+    width: 100%;
+}
+.fly-swiper-list .product-bottom:after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #ef8200;
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    transition: ease .6s;
+    -webkit-transition: ease .6s;
+}
+.product-wrpper .intro:hover h4,
+.product-wrpper .intro:hover p{
+	transform: translateY(-20px);
+}
+/*底部内容*/
+/*选择结束*/
+
+.fly-no-box{
+	height: .2rem;
+    background: #f2f1f1;
+    width: 100%;
+}
+
+/*轮播开始*/
+.fly-more-product{
+	margin-bottom: .95rem;
+}
+.fly-more-product .fly-swiper-list{
+	margin-bottom: .35rem;
+}
+.fly-more-product h3{
+    text-align: center;
+    font-size: .24rem;
+    color: #333;
+    margin: .55rem 0;
+    font-weight: normal;
+}
+
+
+
+
+@media (max-width: 1200px){
+	.fly-option {
+    	padding-left: 1rem;
+	}
+	.fly-option-list {
+	    margin-right: .9rem;
+	    margin-bottom: .4rem!important;
+	}
+	.fly-scene {
+	    margin-top: .22rem;
+	}
+}
+@media (max-width: 800px) {
+	.fly-swiper-list .intro {
+		display: none;
+	}
+
+	
+	.fly-swiper-list .product-bottom .product-sale{
+		position: static;
+    	padding: 6px 14px;
+    	font-size: 11px;
+    	margin: 10px 0 0;
+	}
+}
+
+@media (max-width: 640px){
+	.fly-option-list .fly-select-btn{
+	    padding: 0 20px;
+	    min-width: 80px;
+	    height: 30px;
+	    font-size: 13px;
+	    line-height: 30px;
+	}
+	.fly-swiper-list .fly-product-pro{
+		height: 5.8rem;
+    	line-height: 5.8rem;
+	}
+}

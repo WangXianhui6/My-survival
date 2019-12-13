@@ -1,0 +1,224 @@
+.product-technology-banner {
+	position: relative;
+	width: 100%;
+	height: auto
+}
+a{
+	color:#555555;
+}
+.product-technology-banner .product-middle-box {
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	line-height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.product-technology-banner .product-middle-box h2 {
+	font-size: 42px;
+}
+
+.product-technology-banner .product-middle-box p {
+	font-size: 14px;
+}
+
+.product-technology-banner .product-middle-box span {
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+<!--智净技术-->.product-main-cleanpro {
+	height: 780px;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 75px;
+}
+
+.product-main-cleanpro .product-cleanpro-content {
+	width: 100%;
+}
+
+.product-main-cleanpro .product-cleanpro-content>img {
+	width: 100%;
+}
+
+.product-main-cleanpro-center {
+	text-align: center;
+}
+
+.product-main-cleanpro .product-main-cleanpro-center>h2 {
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.product-main-cleanpro .product-main-cleanpro-center>p {
+	font-size: 16px;
+	color: 666;
+	line-height: 34px;
+	width: 88%;
+	margin: 0 auto;
+}
+
+
+/*轮播*/
+
+.product-technology-carousal {
+	height: 780px;
+	overflow: hidden;
+	position: relative;
+}
+
+.product-technology-carousal .product-technology-carousal-box {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	background: #f0f0f0;
+	display: none;
+}
+
+.product-technology-carousal .product-technology-public {
+	background: #369ba2;
+}
+
+.product-technology-carousal .product-public-color {
+	background: #1bc5b9;
+}
+
+.product-technology-carousal .product-white {
+	background: #444;
+}
+
+.product-technology-carousal .product-technology-carousal-box.on {
+	display: block;
+}
+
+.product-technology-carousal .product-technology-carousal-box .product-left {
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+
+.product-technology-carousal-box .product-left>img{
+	transition: all 0.5s;
+}
+.product-technology-carousal .product-technology-carousal-box .product-right {
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	padding: 1.8rem .8rem;
+	/*display: none;*/
+}
+
+.product-technology-carousal .product-technology-carousal-box .product-right-public {
+	color: #FFFFFF;
+}
+
+.product-technology-carousal .product-black {
+	background: #0083cd;
+}
+
+.product-right h3 {
+	font-size: 30px;
+	color: #333;
+	margin-bottom: 35px;
+	transition: 0.5s ease;
+}
+
+.product-right p {
+	font-size: 16px;
+	line-height: 30px;
+	color: #666;
+	transition: 0.5s ease;
+}
+
+.product-right .img-box {
+	margin-top: 80px;
+	transition: 0.5s ease;
+}
+
+
+.product-technology-carousal .product-technology-carousal-box .product-right>h3,
+.product-technology-carousal .product-technology-carousal-box .product-right>p,
+.product-technology-carousal .product-technology-carousal-box .product-right>img {
+	margin-top: 20px 40px;
+}
+
+.product-technology-carousal .product-aside {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	width: 25px;
+	height: 210px;
+	background: #424242;
+	z-index: 2;
+	border-radius: 20px;
+	padding: 1px 8px;
+}
+
+.product-technology-carousal .product-aside li {
+	width: 8px;
+	height: 8px;
+	background: #898989;
+	border-radius: 50%;
+	margin: 23px 0;
+	cursor: pointer;
+}
+
+.product-technology-carousal .product-aside li.on {
+	background: #FFFFFF;
+}
+
+.product-technology-carousal .product-aside li:hover {
+	background: #FFFFFF;
+}
+
+@media (max-width:640px) {
+	.product-technology-banner .product-middle-box {
+		position: absolute;
+		left: 25%;
+		top: 25%;
+		line-height: 40px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	.product-technology-banner .product-middle-box h2 {
+		font-size: 32px;
+	}
+}
+
+@media (max-width:800px) {
+	.product-technology-carousal {
+		height: 100%;
+	}
+	.product-technology-carousal .product-technology-carousal-box {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background: #f0f0f0;
+		display: none;
+	}
+	.product-technology-carousal .product-technology-carousal-box .product-left {
+		width: 100%;
+		height: 400px;
+		overflow: hidden;
+	}
+	.product-technology-carousal .product-technology-carousal-box .product-right {
+		width: 100%;
+		text-align: center;
+		line-height: 30px;
+		padding: 1.8rem .8rem;
+		height: 600px;
+		overflow: hidden;
+	}
+	.product-technology-carousal .product-aside {
+		display: none;
+	}
+	.product-technology-carousal .product-technology-carousal-box {
+		display: block;
+	}
+}

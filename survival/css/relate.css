@@ -1,0 +1,201 @@
+/*.heidth{
+	position: relative;
+}*/
+.fly-inside_banner{
+	width: 100%;
+	height: 2rem;
+}
+.fly-heidth .fly-full{
+	width: 100%;
+	min-height: 100%;
+	background: url(../img/2018-06-19-18-03-16.jpg) no-repeat center/cover;
+}
+
+
+
+.from.fly-contact{
+	background: url(../img/contact-bg2.jpg) no-repeat center;
+}
+.fly-contact .fly-container{
+	padding: 0 2%;
+}
+.fly-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.table-cell {
+	padding: 70px 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.fly-contact .fly-hhxz{
+	width: 40%;
+	display: inline-block;
+}
+.fly-contact .fly-hhxz .fly-h3 {
+    font-size: .24rem;
+    color: #333;
+    margin-bottom: .4rem;
+}
+.fly-contact .fly-hhxz .fly-p {
+    font-size: 14px;
+    line-height: 36px;
+    color: #666;
+}
+
+.fly-contact .form {
+    width: 56%;
+    font-size: 0;
+    background: #f9f9f9;
+    border: 1px solid #e3e3e3;
+    margin-left: .48rem;
+    margin-left: 0;
+}
+
+.fly-heidth .ib-middle {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+.form .fly-form {
+    display: inline-block;
+    width: 100%;
+    padding: 0 .27rem;
+}
+.form .fly-form .fly-h3 {
+    text-align: center;
+    font-size: .24rem;
+    margin: .3rem 0;
+    color: #333;
+}
+.form .fly-form .input-box {
+    position: relative;
+    margin-bottom: .25rem;
+    width: 49%;
+    background: #fff;
+}
+.form .fly-form .input-box:last-child{
+	width: 100%;
+}
+.form .fly-form input {
+    width: 100%;
+    height: .4rem;
+    border: 1px solid #dbdbdb;
+    padding-left: .1rem;
+    position: relative;
+    z-index: 1;
+    background: 0 0;
+}
+
+.form .fly-form .input-box .input:hover{
+	border: 1px solid orange;
+}
+.form .fly-form .input-box.width-100{
+	width: 100%;
+}
+.input-box.width-100 .input-val{
+	width: 50%;
+	vertical-align: middle;
+}
+.input-box.width-100 canvas{
+	vertical-align: middle;
+}
+.fly-contact .fly-form textarea {
+    width: 100%;
+    height: .8rem;
+    padding: .05rem 0 0 .05rem;
+    border: 1px solid #dbdbdb;
+    resize: none;
+    position: relative;
+    z-index: 1;
+    background: 0 0;
+}
+.fly-contact .fly-tospan{
+	line-height: .45rem;
+	font-size: .16rem;
+}
+.fly-contact .fly-more a {
+	width: 100%;
+    text-align: center;
+    margin-bottom: .4rem;
+    display: inline-block;
+    height: 40px;
+    background: #ef8200;
+    position: relative;
+    color: #fff;
+    font-size: .12rem;
+    font-family: Arial;
+    line-height: .40rem;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
+
+
+
+.form .fly-form .input-box label{
+	font-size: .14rem;
+	position: absolute;
+	left: 0;
+	top: .4rem;
+	color: red;
+}
+
+.btn button{
+	width: 100%;
+	height: 0;
+	
+}
+@media (max-width: 768px){
+	   
+
+
+.fly-heidth .fly-full {
+    height: 1.9rem;
+}
+.fly-contact{
+	padding: .35rem 0;
+	}
+.fly-contact .form {
+    margin-top: .1rem;
+}
+.fly-contact .fly-hhxz .fly-p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.form .fly-form .input-box{
+   	width: 100%;
+   }
+.form .fly-form input {
+	height: 40px;
+}
+.fly-contact .fly-hhxz{
+	width: 100%;
+
+}
+.fly-contact .form{
+	width: 100%;
+}
+.fly-contact .fly-hhxz .fly-h3 {
+    margin-bottom: 20px;
+    font-size: .19rem;
+}
+.form .fly-form .fly-h3 {
+    font-size: .19rem;
+    font-size: 19px;
+}
+.fly-contact .fly-hhxz .fly-h3{
+	font-size: 16px;
+}
+.table-cell{
+	padding: 10px 0;
+}
+.form .fly-form .input-box label{
+	top: 40px;
+}
+}

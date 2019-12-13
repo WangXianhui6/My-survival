@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录注册</title>
+		<link rel="shortcut icon" href="img/shortcut-icon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/back-login.css"/>
+	</head>
+	<body>
+		<div class="login on log-res">
+			<div class="title flex-betwe">
+				<div>登录</div>
+				<div class="login-regis">
+					<div>去注册</div>
+				</div>
+			</div>
+			<form class="form-login">
+				<div>
+					<label for="email" class="choose-title">邮箱：</label>
+					<input type="text" id="email" name="email"  placeholder="请输入邮箱"/>
+				</div>
+				<!--<div>
+					<label for="username" class="choose-title">用户名：</label>
+					<input type="text" id="username" name="username"  placeholder="请输入用户名"/>
+				</div>-->
+				<div>
+					<label for="password" class="choose-title">密码：</label>
+					<input type="password" id="password" name="pwd" placeholder="请输入密码"/>
+				</div>
+				<div>
+					<span class="login-btn">立即登录</span>
+				</div>
+			</form>
+		</div>
+		<div class="log-res register">
+			<div class="title flex-betwe">
+				<div>注册</div>
+				<div class="login-regis">
+					<div>去登录</div>
+				</div>
+			</div>
+			<form class="form-login">
+				<div>
+					<label for="email" class="choose-title">邮箱：</label>
+					<input type="text" id="email" name="email" placeholder="请输入要注册的邮箱"/>
+				</div>
+				<div>
+					<label for="code" class="choose-title">验证码：</label>
+					<input type="text" id="code" name="code" placeholder="请输入验证码"/>
+					<span class="getcode">获取验证码</span>
+				</div>
+				<div>
+					<label for="user" class="choose-title">用户名：</label>
+					<input type="text" id="user" name="username" placeholder="请输入用户名"/>
+				</div>
+				<div>
+					<label for="pwd" class="choose-title">密码：</label>
+					<input type="password" id="pwd" placeholder="请输入密码"/>
+					<input type="hidden" name="pwd" />
+				</div>
+				<div>
+					<label for="repwd" class="choose-title">确认密码：</label>
+					<input type="password" id="repwd" placeholder="请再次输入密码"/>
+				</div>
+				<div>
+					<label for="identify" class="choose-title">注册后身份：</label>
+					<select name="identify">
+						<option value="1">后台管理人员</option>
+						<option value="2">客户</option>
+					</select>
+				</div>
+				<div>
+					<label for="head" class="choose-title">头像：</label>
+					<input type="file" id="head" name="head" accept="image/*"/>
+				</div>
+				<div>
+					<span class="regis-btn">立即注册</span>
+				</div>
+				<!--<label for="manage-pwd">请输入管理密码</label>
+				<input type="password" id="manage-pwd"/>-->
+			</form>
+		</div>
+		<div class="success-model">
+		</div>
+	</body>
+</html>
+<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/md5.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/api.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/back-login.js" type="text/javascript" charset="utf-8"></script>

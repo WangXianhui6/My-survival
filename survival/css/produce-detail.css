@@ -1,0 +1,298 @@
+
+/*标题*/
+.produce-header{
+	position: relative;
+	z-index: 1;
+	height:72px;
+	padding:20px 0;
+}
+.produce-header h2{
+	font-size:16px;
+	color:#666;
+}
+ .produce-header .produce-header-lists li{
+	float:left;
+	width:60px;
+	height:20px;
+	font-size:14px;
+	padding:10px 0;
+	
+}
+.produce-header  .produce-header-lists li:hover{
+	cursor:pointer;
+	color:#EF8200;
+}
+.produce-header .produce-header-lists li.show{
+	color:#EF8200;
+}
+.produce-header-lists li a{
+	display: inline-block;
+	width:100px;
+	height:30px;
+    font-size:14px;
+    line-height:30px;
+    text-align:center;
+    border-radius:3px;
+    background:#EF8200;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.produce-header .fly-product-btn{
+	position:absolute;
+	right:20px;
+	top:50%;
+	width:78px;
+	height:26px;
+	border-radius:3px;
+	text-align:center;
+	line-height:26px;
+	color:#FFFFFF;
+	background:#EF8200;
+	display:none;
+}
+/*商品图片*/
+.fly-detail-content{
+	position: relative;
+	overflow: hidden;
+	margin-top:.1rem;
+	margin-top:40px;
+}
+.fly-detail-content .fly-product-header{
+	position:absolute;
+	top:22%;
+	left:24%;
+	color:#745141;
+	text-align:center;
+}
+.fly-detail-content .fly-product-detail-img{
+	vertical-align:middle;
+	text-align: center;
+	line-height:50%;
+}
+
+.fly-detail-content .fly-product-detail-img .fly-product-detail-toggle{
+	display: inline-block;
+	vertical-align: middle;
+	display: none;
+}
+.fly-detail-content .fly-product-header h2{
+	font-size:.42rem;
+}
+
+ .fly-detail-content .fly-product-detail-img .fly-detail-toggle-img img{
+ 	width:12rem;
+ 	height:5.85rem;
+ }
+ .fly-detail-content .fly-product-detail-img .fly-product-detail-toggle img{
+ 	width:100%;
+ 	height:8.94rem;
+ }
+ /*多功能多场景*/
+.fly-product-detail-more-box{
+	padding:80px 0 0;
+	text-align:center;
+	overflow: hidden;
+}
+.fly-product-detail-more-box .fly-product-more-content{
+	width:8.65rem;
+	margin:0 auto;
+}
+.fly-product-detail-more-box .fly-product-more-content h3{
+	font-size:28px;
+	color:#333;
+	line-height:40px;
+
+}
+.fly-product-detail-more-box .fly-product-more-content p{
+	font-size:14px;
+	line-height:26px;
+	color:#777;
+	text-align: left;
+}
+.fly-product-detail-more-box .fly-product-more-content .fly-detail-sky{
+	width:100%;
+	margin-top:40px;
+}
+.fly-product-detail-more-box .fly-product-more-content .fly-detail-sky .fly-detail-sky-img{
+	width:100%;
+}
+.fly-product-detail-more-box .fly-product-more-content .fly-detail-sky .fly-detail-key-two-img{
+	width:100%;
+	display:none;
+}
+ /*轮播*/
+.carousel-img{
+	margin-top:.8rem;
+}
+
+/*360度进风*/
+.fly-product-detail-wind{
+	position:relative;
+	text-align:center;
+	overflow: hidden;
+	
+}
+.fly-product-detail-wind .fly-product-detail-wind-content{
+	position: absolute;
+	top:0;
+	left:15%;
+	width:8.5rem;
+	padding:.8rem 0 0;
+	
+}
+.fly-product-detail-wind .fly-product-detail-wind-content>h3{
+		font-size:28px;
+		color:#333;
+		line-height:40px;
+		
+}
+.fly-product-detail-wind .fly-product-detail-wind-content>p{
+	font-size:14px;
+	color:#666;
+	line-height:26px;
+	padding:.3rem 0;
+	text-align:left;
+}
+.fly-product-detail-wind .fly-detail-wind-bottom>img{
+	width:12rem;
+	height:9.22rem;
+}
+/*功能介绍*/
+.fly-product-detail-function{
+	position:relative;
+	text-align:center;
+	overflow: hidden;
+
+}
+.fly-product-detail-function .product-detail-function-center{
+	position: absolute;
+	top:0;
+	left:15%;
+	width:8.50rem;
+	
+}
+.fly-product-detail-function .product-detail-function-center>h3{
+	    font-size:28px;
+		color:#333;
+		line-height:40px;
+}
+.fly-product-detail-function .product-detail-function-center>p{
+	font-size:14px;
+	color:#666;
+	line-height:26px;
+	padding:.1rem 0;
+	text-align:left;
+}
+.fly-product-detail-function .product-detail-function-center>img{
+	margin-top:.5rem;
+	width:100%;
+}
+.fly-product-detail-function .product-detail-function-bottom>img{
+	width:12rem;
+	height:6.86rem;
+}
+/*清新典雅*/
+.fly-product-detail-fresh{
+	overflow:hidden;
+	
+}
+.fly-product-detail-fresh .product-detail-fresh-content{
+	text-align:center;
+	padding-top:1rem;
+	width:8.65rem;
+	margin:0 auto;
+}
+.fly-product-detail-fresh .product-detail-fresh-content>h3{
+	font-size:28px;
+	color:#333;
+}
+.fly-product-detail-fresh .product-detail-fresh-content>p{
+	font-size:14px;
+	color:#777;
+	line-height:26px;
+	margin:.3rem 0 0;
+	text-align:left;
+}
+.product-carousel .carousel{
+	position: relative;
+	width:12rem;
+	margin-bottom:40px;
+}
+.product-carousel .carousel-inner{
+	position:relative;
+	max-width:1062px;
+	height:4.84rem;
+	margin:0 auto;
+	overflow: hidden;
+	border:6px solid #F1F1F1;
+	
+}
+.product-carousel .prev-btn{
+	position: absolute;
+	top:50%;
+	left:-5%;
+	background:transparent;
+}
+
+.product-carousel .next-btn{
+	position: absolute;
+	top:50%;
+	right:-5%;
+	background:transparent;
+}
+.product-carousel .carousel-indicators{
+	display:none;
+}
+/*产品参数*/
+.fly-product-parameter .product-detail-parameter-img>img{
+	width:12rem;
+	height:6.04rem;
+}
+@media(max-width:640px){
+.produce-header .produce-header-lists{
+		display:none;
+}
+.produce-header .fly-product-btn{
+		display:block;
+}
+.fly-product-detail-wind .fly-product-detail-wind-content{
+	display:none;
+}
+.fly-product-detail-function .product-detail-function-center{
+	display: none;
+}
+.fly-product-detail-function .product-detail-function-center>img{
+	display:none;
+}
+}
+@media(max-width:650px) {
+.fly-detail-content .fly-product-header{
+	display:none;
+}
+.fly-detail-content .fly-product-detail-img .fly-detail-toggle-img{
+	display:none;
+}
+.fly-detail-content .fly-product-detail-img .fly-product-detail-toggle{
+	
+	display:block;
+}	
+.fly-product-detail-more-box .fly-product-more-content .fly-detail-sky .fly-detail-sky-img{
+	width:100%;
+	display:none;
+}
+.fly-product-detail-more-box .fly-product-more-content .fly-detail-sky .fly-detail-key-two-img{
+	width:100%;
+	display:block;
+}
+}
+@media(max-width:1200px){
+.product-carousel .carousel-indicators{
+	display:block;
+}
+.product-carousel .prev-btn{
+	display: none;
+}
+
+.product-carousel .next-btn{
+	display: none;
+}

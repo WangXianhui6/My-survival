@@ -1,0 +1,36 @@
+/*去除浏览器默认样式*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	color: #333;
+	font-family: "微软雅黑",arial;
+	outline: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+input{
+	border: 1px solid #CCCCCC;
+}
+:focus{
+	outline: none;
+}
+a{
+	text-decoration: none;
+	color: #808080;
+}
+ol,li{
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+em,i{
+	font-style: normal;
+}
+p{
+	font-style: normal;
+}
+

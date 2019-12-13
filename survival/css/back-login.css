@@ -1,0 +1,100 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background: url(../img/group2.jpg);
+}
+.log-res.on{
+	display: block;
+}
+.log-res{
+	border-radius: 5px;
+	display: none;
+	box-shadow: 0 2px 12px -3px #1B6D85;
+	width: 50%;
+	background: deepskyblue;
+	padding: 20px;
+	margin: 50px auto 0;
+	font-size: 16px;
+}
+.log-res>.title>div{
+	font-weight: bold;
+	padding: 0 10px;
+	line-height: 40px;
+}
+.log-res>.title>div.login-regis{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.form-login{
+	padding-top: 20px;
+}
+.form-login>div{
+	padding-bottom: 20px;
+	text-align: center;
+}
+.form-login label.choose-title{
+	text-align: right;
+	color: floralwhite;
+	display: inline-block;
+	width: 20%;
+}
+.form-login label{
+	color: greenyellow;
+	display: block;
+}
+.form-login input,.form-login select{
+	background: white;
+	border: 1px solid #ccc;
+	width: 50%;
+	border-radius: 5px;
+	height: 40px;
+	padding-left: 10px;
+	line-height: 40px;
+}
+.form-login #code{
+	width: 30%;
+}
+.form-login>div>span{
+	color: deepskyblue;
+	padding: 9px 17px;
+	background: white;
+	vertical-align: middle;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+.success-model{
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 20px 30px;
+	color: white;
+	font-weight: bold;
+	display: none;
+}
+.success-model.succ{
+	background: #46b8da;
+}
+.success-model.err{
+	background: #d43f3a;
+}
+
+
+
+
+
+
+
+
+
+.flex-betwe{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}

@@ -1,0 +1,414 @@
+ 
+ /*商品类型*/
+ 
+ .product-style li {
+ 	position: relative;
+ 	width: 25%;
+ 	font-size: 16px;
+ 	border-left: .01rem solid#e1e1e1;
+ 	border-bottom: .01rem solid#E1E1E1;
+ 	text-align: center;
+ 	padding: .24rem 0;
+ 	float: left;
+ 	overflow: hidden;
+ }
+ 
+ .product-style li .product-public {
+ 	color: #EF8200;
+ 	font-size: 16px;
+ }
+ 
+ .product-style li:hover:after {
+ 	width: 100%;
+ }
+ 
+ .product-style li:after {
+ 	left: 0;
+ 	bottom: -0.01rem;
+ 	background: #ef8200;
+ 	height: .02rem;
+ 	content: '';
+ 	position: absolute;
+ 	width: 0;
+ 	transition: width ease-out 0.3s;
+ }
+ 
+ .product-style li.show {
+ 	border-bottom: 0.02rem solid #EF8200;
+ }
+ 
+ .product-style li .product-first-remove,
+ .product-style li .product-second-remove,
+ .product-style li .product-three-remove,
+ .product-style li .product-last-remove {
+ 	width: 100%;
+ 	height: 100%;
+ 	transition: 0.5s;
+ }
+ 
+ .product-style li:hover .product-first-remove,
+ .product-style li:hover .product-second-remove,
+ .product-style li:hover .product-three-remove,
+ .product-style li:hover .product-last-remove {
+ 	transform: translateY(-150%);
+ }
+ 
+ .product-style .product-first {
+ 	display: inline-block;
+ 	width: 36px;
+ 	height: 54px;
+ 	background: url(../img/2018-06-08-10-28-20.png) no-repeat left;
+ 	vertical-align: middle;
+ }
+ 
+ .product-style .product-two {
+ 	display: inline-block;
+ 	width: 36px;
+ 	height: 54px;
+ 	background: url(../img/2018-06-08-10-32-04.png)no-repeat left;
+ 	vertical-align: middle;
+ }
+ 
+ .product-style .product-three {
+ 	display: inline-block;
+ 	width: 36px;
+ 	height: 54px;
+ 	background: url(../img/2018-09-11-15-49-52.jpg)no-repeat left;
+ 	vertical-align: middle;
+ }
+ 
+ .product-style .product-last {
+ 	display: inline-block;
+ 	width: 36px;
+ 	height: 54px;
+ 	background: url(../img/2018-06-08-10-32-40.png)no-repeat left;
+ 	vertical-align: middle;
+ }
+ 
+ 
+ .product-style .product-first-text {
+ 	display: inline-block;
+ 	width: 36px;
+ 	height: 54px;
+ 	background: url(../img/2018-06-08-10-28-29.png)no-repeat left;
+ 	vertical-align: middle;
+ }
+ 
+ .product-style .product-two-text {
+ 	display: inline-block;
+ 	width: 36px;
+ 	height: 54px;
+ 	background: url(../img/2018-06-08-10-32-11.png)no-repeat left;
+ 	vertical-align: middle;
+ }
+ 
+ .product-style .product-three-text {
+ 	display: inline-block;
+ 	width: 36px;
+ 	height: 54px;
+ 	background: url(../img/2018-09-11-15-49-56.jpg)no-repeat left;
+ 	vertical-align: middle;
+ }
+ 
+ .product-style .product-last-text {
+ 	display: inline-block;
+ 	width: 36px;
+ 	height: 54px;
+ 	background: url(../img/2018-06-08-10-32-43.png)no-repeat left;
+ 	vertical-align: middle;
+ }
+ 
+ .product-style li .product-toggle-lists {
+ 	display: none;
+ }
+ /*商品展示*/
+ 
+ .product-air,
+ .product-purified,
+ .product-car,
+ .product-parts {
+ 	margin-top: 0.95rem;
+ 	margin-bottom: 0.9rem;
+ }
+ 
+ .product-item li {
+ 	position: relative;
+ 	width: 33.33%;
+ 	float: left;
+ 	border-left: .2rem solid #FFFFFF;
+ 	border-right: .2rem solid #FFFFFF;
+ 	margin-bottom: 0.8rem;
+ 	border-bottom: 1px solid#E2E2E2;
+ 	opacity: 1;
+ }
+ 
+ .product-item li .img-scale {
+ 	position: relative;
+ 	line-height: 4.20rem;
+ 	text-align: center;
+ 	background: #f6f6f6;
+ 	border-radius: 3px;
+ 	overflow: hidden;
+ }
+ 
+ .product-wapper .product-intro {
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	line-height: .3rem;
+ 	padding: .4rem;
+ 	background: rgba(255, 255, 255, .8);
+ 	border: .04rem solid #e9e9e9;
+ 	display: none;
+ 	margin: 0 auto;
+ }
+ 
+ .product-item li:hover .product-intro {
+ 	cursor: pointer;
+    display: block;
+ }
+ 
+ .product-wapper .product-intro h4 {
+ 	font-size: .24rem;
+ 	color: #666666;
+ 	margin-bottom: .74rem;
+ 	transition: ease .6s;
+ }
+ 
+ .product-wapper .product-intro p {
+ 	font-size: .14rem;
+ 	line-height: .28rem;
+ 	color: #5d5d5d;
+ 	margin-bottom: .3rem;
+ 	transition: ease .6s 50ms;
+ }
+ 
+ .product-wapper .product-intro .product-add {
+ 	width:60px;
+ 	height:60px;
+ 	background: url(../img/icon13.png) no-repeat center;
+ 	margin: 0 auto;
+ 	transition: ease .4s;
+ }
+ 
+ .product-wapper .product-intro:hover h4,
+ .product-wapper .product-intro:hover p,
+ .product-wapper .product-intro:hover .product-add {
+ 	transform: translateY(-20px);
+ }
+ 
+ .product-item li .product-wapper img {
+ 	transition: all 0.5s ease-out;
+ }
+ 
+ .product-item li:hover img {
+ 	transform: scale(1.1);
+ }
+ 
+ .product-item li:hover:after {
+ 	width: 100%;
+ }
+ 
+ .product-item li:after {
+ 	left: 0;
+ 	bottom: -0.01rem;
+ 	background: #ef8200;
+ 	height: .01rem;
+ 	content: '';
+ 	position: absolute;
+ 	width: 0;
+ 	transition: width ease-out 0.5s;
+ }
+ 
+ .product-wapper .img-scale img {
+ 	max-height: 2.47rem;
+ 	max-width: 1.85rem;
+ }
+ 
+ .product-item .product-wapper .product-bottom {
+ 	margin-top: 0.2rem;
+ 	padding: 0.2rem 0;
+ 	line-height: 0.2rem;
+ 	background: #FFFFFF;
+ 	width: 100%;
+ }
+ 
+ .product-item .product-wapper .product-bottom .product-title {
+ 	font-size: .18rem;
+ }
+ 
+ .product-item li:hover .product-title {
+ 	color: #EF8200;
+ 	cursor: pointer;
+ }
+ 
+ .product-item .product-wapper .product-bottom .product-text {
+ 	font-size.14rem;
+ 	color: #999999;
+ }
+ 
+ .product-item .product-wapper .product-bottom .product-sale {
+ 	float: right;
+ 	width: 1.2rem;
+ 	height: .4rem;
+ 	text-align: center;
+ 	line-height: .4rem;
+ 	font-size: 14px;
+ 	color: #666666;
+ 	border: 1px solid#b7b7b7;
+ 	border-radius:3px;
+ }
+ 
+ .product-item li:hover .product-sale{
+ 	cursor: pointer;
+ 	color: #EF8200;
+ 	border-color: #EF8200;
+ }
+ 
+ .product-item .product-wapper .product-btn {
+ 	display: inline-block;
+ 	width: 66px;
+ 	height: 28px;
+ 	text-align: center;
+ 	line-height: 28px;
+ 	font-size: 14px;
+ 	color: #666666;
+ 	border: 1px solid#b7b7b7;
+ 	border-radius: 3px;
+ 	text-decoration: none;
+ 	display: none;
+ }
+ 
+ .product-item li:hover .product-btn {
+ 	cursor: pointer;
+ 	color: #EF8200;
+ 	border-color: #EF8200;
+ }
+ /*翻页按钮*/
+ 
+ .product-page {
+ 	margin: .38rem;
+ 	margin-left:5rem;
+ 	vertical-align: middle;
+ 	text-align: center;
+ 	line-height:50%;
+ }
+ 
+ .product-page li {
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	width: 36px;
+ 	height: 36px;
+ 	line-height:36px;
+ 	text-align: center;
+ 	color: #333333;
+ 	font-size: 18px;
+ 	border: 1px solid #E2E2E2;
+ 	float: left;
+ 	
+ 	
+ }
+ 
+ .product-page li.on {
+ 	background: #EF8200;
+ 	color: #FFFFFF;
+ 	border-color: #EF8200;
+ }
+ 
+ .product-page li:hover {
+ 	background: #EF8200;
+ 	color: #FFFFFF;
+ 	cursor: pointer;
+ 	border-color: #EF8200;
+ }
+ /*净水机*/
+ 
+.about-certifiction-tab {
+	margin: 0.38rem 0 1.00rem;
+	text-align: center;
+}
+
+.about-certifiction-pagination {
+	display: inline-block;
+}
+
+.about-certifiction-pagination li,
+.about-certifiction-pagination span {
+	border: 0.01rem solid #e1e1e1;
+	float: left;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	font-size: 18px;
+	margin-right: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+}
+
+.about-certifiction-pagination li:first-child,.about-certifiction-pagination li:last-child {
+	margin-right: 0.12rem;
+	font-weight: bolder;
+	line-height: 36px;
+}
+ 
+.about-certifiction-pagination .btn{
+	border-radius: 3px;
+	background: #fff;
+	color: #000;
+}
+.about-certifiction-pagination .btn.on{
+	background: #ef8200;
+	color: #FFFFFF;
+}
+ 
+ 
+.product-item-tab{
+	display: none;
+} 
+
+.product-item-tab.active{
+	display: block;
+}
+ 
+ @media(max-width:640px) {
+ 	.product-item li {
+ 		position: relative;
+ 		width: 50%;
+ 		float: left;
+ 		border-left: .2rem solid #FFFFFF;
+ 		border-right: .2rem solid #FFFFFF;
+ 		margin-bottom: 0.8rem;
+ 		border-bottom: 1px solid#E2E2E2;
+ 		opacity: 1;
+ 	}
+ 	.product-wapper .product-intro {
+ 		display: none;
+ 	}
+ 	.product-style li {
+ 		position: relative;
+ 		width: 25%;
+ 		height: 102px;
+ 		font-size: 12px;
+ 		border-left: .01rem solid#e1e1e1;
+ 		border-bottom: .01rem solid#E1E1E1;
+ 		text-align: center;
+ 		padding: .24rem 0;
+ 		float: left;
+ 		overflow: hidden;
+ 	}
+ 	
+ 	.product-style li .product-toggle {
+ 		display: none;
+ 	}
+ 	.product-style li .product-toggle-lists {
+ 		display: block;
+ 	}
+ 	.product-item .product-wapper .product-bottom .product-sale {
+ 		display: none;
+ 	}
+ 	.product-item .product-wapper .product-btn {
+ 		display: block;
+ 	}
+ }

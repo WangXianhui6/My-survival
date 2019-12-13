@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>计划</title>
+	</head>
+	<style>
+		*{
+			white-space: nowrap;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		body>div{
+			border-right: 1px solid #ccc;
+		}
+		.title{
+			line-height: 100px;
+			border-bottom: 1px solid #ccc;
+			color: blueviolet;
+			font-size: 46px;
+		}
+		.people{
+			position: relative;
+			display: flex;
+			font-size: 22px;
+			border-bottom: 1px solid #ccc;
+		}
+		.people>div>div>div{
+			float: left;
+		}
+		.people>.name{
+			width: 10%;
+		}
+		.people>.content{
+			border-left: 1px solid #ccc;
+			padding-left: 20px;
+		}
+		.people>.content>div{
+			line-height: 50px;
+		}
+		.people>.content>div>div:first-child{
+			text-align: right;
+			width: 170px;
+		}
+		.people>.content>div>div:last-child{
+			text-indent: 20px;
+		}
+		.outer{
+			border-bottom: 1px solid #CCC;
+			display: flex;
+		}
+		.outer>div{
+			white-space: normal;
+			font-size: 22px;
+			line-height: 40px;
+			width: 14%;
+			border-left: 1px solid #ccc;
+		}
+	</style>
+	<body>
+		<div>
+			<div class="title">总计划</div>
+			<div class="people clearfix">
+				<div class="name">周计划</div>
+				<div class="content">
+					<div class="now clearfix">
+						<div>小组总计划：</div>
+						<div>预计周5完成页面，之后开始数据库及接口</div>
+					</div>
+				</div>
+			</div>
+			<div class="people clearfix">
+				<div class="name">计划后期</div>
+				<div class="content">
+					<div class="now clearfix">
+						<div>数据库：</div>
+						<div>页面完成后由刘龙设计数据库</div>
+					</div>
+					<div class="now clearfix">
+						<div>接口：</div>
+						<div>王先会和王文刚负责接口</div>
+					</div>
+				</div>
+			</div>
+			<div class="wang people clearfix">
+				<div class="name">王先会</div>
+				<div class="content">
+					<!--<div class="now clearfix">
+						<div>计划完成量：</div>
+						<div></div>
+					</div>-->
+					<div class="finish clearfix">
+						<div>已完成量：</div>
+						<div>完成了在线购买页面的所有模块</div>
+					</div>
+				</div>
+			</div>
+			<div class="wang people clearfix">
+				<div class="name">王文刚</div>
+				<div class="content">
+					<!--<div class="now clearfix">
+						<div>计划完成量：</div>
+						<div>把剩下静态页面完成与js效果，有时间开始响应式</div>
+					</div>-->
+					<div class="finish clearfix">
+						<div>已完成量：</div>
+						<div>把剩下静态页面完成与js效果，有时间开始响应式页面与不同产品页面间的跳转</div>
+					</div>
+				</div>
+			</div>
+			<div class="wang people clearfix">
+				<div class="name">余志伟</div>
+				<div class="content">
+					<!--<div class="now clearfix">
+						<div>计划完成量：</div>
+						<div>把联系我们、招商加盟这2个页面响应式完成</div>
+					</div>-->
+					<div class="finish clearfix">
+						<div>已完成量：</div>
+						<div>联系我们HTML页面-招商加盟HTML页面</div>
+					</div>
+				</div>
+			</div>
+			<div class="wang people clearfix">
+				<div class="name">刘龙</div>
+				<div class="content">
+					<!--<div class="now clearfix">
+						<div>计划完成量：</div>
+						<div>做应用场景中的“家居”的响应式</div>
+					</div>-->
+					<div class="finish clearfix">
+						<div>已完成量：</div>
+						<div>“应用场景”的几个静态页面 </div>
+					</div>
+				</div>
+			</div>
+			<div class="wang people clearfix">
+				<div class="name">陈刚</div>
+				<div class="content">
+					<!--<div class="now clearfix">
+						<div>计划完成量：</div>
+						<div>将首页其余模块完成</div>
+					</div>-->
+					<div class="finish clearfix">
+						<div>已完成量：</div>
+						<div>公共顶部、公共底部、首页的主轮播、商品轮播模块</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="title">详细计划</div>
+			<div class="detail outer">
+				<div>组员\时间</div>
+				<div>周一</div>
+				<div>周二</div>
+				<div>周三</div>
+				<div>周四</div>
+				<div>周五</div>
+				<div>周六、周日</div>
+			</div>
+			<div class="outer">
+				<div>王先会</div>
+				<div>完成产品选型页面的效果封装</div>
+				<div>完成常见问题页面 服务支持页面</div>
+				<div>完成产品选型页面</div>
+				<div>完成产品选型页面</div>
+				<div>开始数据渲染公共接口</div>
+				<div>开始渲染数据、完善项目负责模块，如以上内容已完成，帮助组员分担工作</div>
+			</div>
+			<div class="outer">
+				<div>王文刚</div>
+				<div>完成产品中心页面</div>
+				<div>完成产品中心子页面</div>
+				<div>完成响应式</div>
+				<div>完成响应式</div>
+				<div>解决相关GUG问题，完善页面</div>
+				<div>完成项目接口、数据渲染，完善项目</div>
+			</div>
+			<div class="outer">
+				<div>余志伟</div>
+				<div>HTML页面联系我们-招商加盟基本</div>
+				<div>完成响应式</div>
+				<div>完成响应式与动态效果</div>
+				<div>完成项目接口</div>
+				<div>数据渲染，完善项目</div>
+				<div>以上皆实现，则辅助组员，分担任务</div>
+			</div>
+			<div class="outer">
+				<div>刘龙</div>
+				<div>完成“应用场景”的各个静态页面</div>
+				<div>完成“应用场景”的各个响应式页面</div>
+				<div>完成“关于”里面的各个静态页面</div>
+				<div>完成“关于”的各个响应式页面</div>
+				<div>建数据库</div>
+				<div>数据库渲染接口</div>
+			</div>
+			<div class="outer">
+				<div>陈刚</div>
+				<div>完成首页其余模块</div>
+				<div>完成首页所有响应</div>
+				<div>完善公共样式及逻辑封装</div>
+				<div>如若以上皆实现，则辅助组员，分担任务</div>
+				<div>如若以上皆实现，则辅助组员，分担任务</div>
+				<div>如若以上皆实现，则辅助组员，分担任务</div>
+			</div>
+		</div>
+	</body>
+</html>
